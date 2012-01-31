@@ -5,6 +5,9 @@ if has("gui_running")
   set lines=76 columns=140
 endif
 
+" Use the mustang colour scheme
+color mustang
+
 " Use pathogen to easily modify the runtime path to include all plugins under
 " the ~/.vim/bundle directory
 call pathogen#runtime_append_all_bundles()
@@ -37,7 +40,6 @@ set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
 set undofile	  " Persistently stores the undo tree
-set relativenumber	" Show line numbers in terms of distance from the current line
 
 " use <leader>w to strip all trailing whitespace in a file
 nnoremap <leader>w :%s/\s\+$//<cr>:let @/=''<CR>
